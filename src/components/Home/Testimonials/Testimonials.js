@@ -1,10 +1,42 @@
 import React from 'react';
+import batman from '../../../images/p1.png';
+import ema from '../../../images/p2.png';
+import superman from '../../../images/p3.png';
+import Testimonial from '../Testimonial/Testimonial';
+import './Testimonials.css';
 
+const testimonialsData = [
+    {
+        quote: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic non architecto nobis, adipisci recusandae repellat accusantium consequuntur, qui nisi deserunt blanditiis mollitia, illo! ',
+        name: 'Batman',
+        from: 'DC',
+        img: batman
+    },
+    {
+        quote: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic non architecto nobis, adipisci recusandae repellat accusantium consequuntur, qui nisi deserunt blanditiis mollitia, illo! ',
+        name: 'Ema',
+        from: 'USA',
+        img: ema
+    },
+    {
+        quote: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic non architecto nobis, adipisci recusandae repellat accusantium consequuntur, qui nisi deserunt blanditiis mollitia, illo! ',
+        name: 'Superman',
+        from: 'DC',
+        img: superman
+    }
+]
 const Testimonials = () => {
     return (
-        <div>
-            <h1>Testimonials on its way</h1>
-        </div>
+        <div className="testimonials my-5 py-5">
+           <div className="container text-center">
+               <h1 className="text-warning">Testimonials</h1>
+               <div className="card-deck mt-5">
+                    {
+                        testimonialsData.map(testimonial => <Testimonial testimonial={testimonial} key={testimonial.name}/>)
+                    }
+                </div>
+           </div>
+       </div>
     );
 };
 

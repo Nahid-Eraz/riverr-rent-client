@@ -2,7 +2,7 @@ import React from 'react';
 
 const JoinCommunity = () => {
     return (
-        <div className="contact my-5 py-5 bg-main">
+        <div className="contact mt-5 py-5 bg-main">
            <div className="container">
                <div className="section-header text-center text-white mb-5">
                     <h3 className="text-warning">Enter</h3>
