@@ -44,3 +44,7 @@
 .bg-main{
   background-color: #ffdaa6;
 }
+
+.btn-main{
+  background-image: linear-gradient(75deg, #ffa047, #ffdd1b);
+}

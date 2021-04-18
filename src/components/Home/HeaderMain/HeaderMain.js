@@ -11,7 +11,7 @@ const HeaderMain = () => {
                         <div className="col-md-4 offset-md-1">
                             <h1 className="mb-4">Just Rent</h1>
                             <p className="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita praesentium eveniet nostrum corporis id quos.</p>
-                            <button className="btn btn-warning mb-4">Rent Now</button>
+                            <button className="btn btn-main mb-4">Rent Now</button>
                         </div>
                         <div className="col-md-6 img-fluid">
                             <img src={image1} class="d-block w-100" alt="..." />
@@ -26,7 +26,7 @@ const HeaderMain = () => {
                         <div className="col-md-4 offset-md-1">
                             <h1 className="mb-4">Anytime</h1>
                             <p className="text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi aperiam et at laborum voluptatum sit!</p>
-                            <button className="btn btn-success mb-4">Rent Now</button>
+                            <button className="btn btn-main mb-4">Rent Now</button>
                         </div>
                     </div>
                 </div>
@@ -35,7 +35,7 @@ const HeaderMain = () => {
                         <div className="col-md-4 offset-md-1">
                             <h1 className="mb-4">Anywhere</h1>
                             <p className="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem neque rerum consequatur aliquid ut ad!</p>
-                            <button className="btn btn-secondary mb-4">Rent Now</button>
+                            <button className="btn btn-main mb-4">Rent Now</button>
                         </div>
                         <div className="col-md-6 img-fluid">
                             <img src={image2} class="d-block w-100" alt="..." />

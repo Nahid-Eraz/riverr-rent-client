@@ -26,7 +26,7 @@ const JoinCommunity = () => {
                            <textarea name="" className="form-control" id="" cols="30" rows="10" placeholder="Message >>"></textarea>
                        </div>
                        <div className="form-group text-center">
-                           <button type="button" className="btn btn-warning"> Send Message </button>
+                           <button type="button" className="btn btn-main"> Send Message </button>
                        </div>
                    </form>
                </div>

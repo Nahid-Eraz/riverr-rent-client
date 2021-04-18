@@ -3,23 +3,22 @@ import batman from '../../../images/p1.png';
 import ema from '../../../images/p2.png';
 import superman from '../../../images/p3.png';
 import Testimonial from '../Testimonial/Testimonial';
-import './Testimonials.css';
 
 const testimonialsData = [
     {
-        quote: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic non architecto nobis, adipisci recusandae repellat accusantium consequuntur, qui nisi deserunt blanditiis mollitia, illo! ',
+        quote: 'Lorem ipsum dolor sit. Hic non, qui nisi deserunt blanditiis mollitia, illo! ',
         name: 'Batman',
         from: 'DC',
         img: batman
     },
     {
-        quote: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic non architecto nobis, adipisci recusandae repellat accusantium consequuntur, qui nisi deserunt blanditiis mollitia, illo! ',
+        quote: 'Lorem ipsum dolor sit. Hic non, qui nisi deserunt blanditiis mollitia, illo! ',
         name: 'Ema',
         from: 'USA',
         img: ema
     },
     {
-        quote: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic non architecto nobis, adipisci recusandae repellat accusantium consequuntur, qui nisi deserunt blanditiis mollitia, illo! ',
+        quote: 'Lorem ipsum dolor sit. Hic non, qui nisi deserunt blanditiis mollitia, illo! ',
         name: 'Superman',
         from: 'DC',
         img: superman
