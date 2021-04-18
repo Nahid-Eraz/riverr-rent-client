@@ -4,7 +4,7 @@ import image2 from '../../../images/img 2.jpg'
 import image3 from '../../../images/img 3.jpg'
 const HeaderMain = () => {
     return (
-        <div id="carouselExampleFade" class="carousel slide carousel-fade mt-4" data-bs-ride="carousel">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade mt-4 ms-4" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div className="row d-flex align-items-center">

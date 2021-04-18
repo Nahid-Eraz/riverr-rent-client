@@ -6,7 +6,7 @@ const ServiceDetail = ({service}) => {
             <img style={{height:'100px'}} src={service.img} alt=""/>
             <h4 className="mt-3">{service.category}</h4>
             <h6 className="text-warning mt-3">$ {service.charge}</h6>
-            <p className="mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, nisi!</p>
+            <p className="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, ullam. Nemo quia quidem nam mollitia.</p>
         </div>
     );
 };
