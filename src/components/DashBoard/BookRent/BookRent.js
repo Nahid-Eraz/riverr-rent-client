@@ -8,8 +8,8 @@ const BookRent = (props) => {
     const onSubmit = data => console.log(data);
 
     return (
-        <div className="row ">
-            <div className="col-md-6">
+        <div className="row d-flex align-items-center">
+            <div className="col-md-6 mt-5 pt-3">
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <input {...register("name")} placeholder="Name" required />
                     <br />
@@ -28,8 +28,8 @@ const BookRent = (props) => {
             </div>
             <div className="col-md-6 img-fluid">
                 <img src={imageURL} alt="" />
-                <h4>Category: {name}</h4>
-                <h4>Require $ {charge} per hour</h4>
+                <h4 className="text-warning">Category: {name}</h4>
+                <h4>Require <span className="text-warning">${charge}</span> per hour</h4>
             </div>
         </div>
     );
