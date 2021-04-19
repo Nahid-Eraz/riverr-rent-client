@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import navIcon from '../../../images/nav.png';
 const Navbar = () => {
     return (
@@ -10,16 +11,16 @@ const Navbar = () => {
                 <div class="collapse navbar-collapse " id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link me-5 active " aria-current="page" href="#">Home</a>
+                            <Link class="nav-link me-5 active " aria-current="page" to="#">Home</Link>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link me-5" href="#">Our Portfolio</a>
+                            <Link class="nav-link me-5" to="#">Our Portfolio</Link>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link me-5" href="#">Our Team</a>
+                            <Link class="nav-link me-5" to="#">Our Team</Link>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link me-5" href="#">Login</a>
+                            <Link class="nav-link me-5" to="/login">Login</Link>
                         </li>
                     </ul>
                 </div>

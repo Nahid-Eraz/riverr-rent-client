@@ -13,6 +13,7 @@ import MakeAdmin from './components/MakeAdmin/MakeAdmin';
 import Book from './components/Book/Book';
 import BookingList from './components/BookingList/BookingList';
 import Review from './components/Review/Review';
+import Login from './components/Auth/Login';
 
 function App() {
   return (
@@ -38,6 +39,9 @@ function App() {
         </Route>
         <Route path="/dashboard/review">
           <Review />
+        </Route>
+        <Route path="/login">
+          <Login />
         </Route>
       </Switch>
     </Router>
