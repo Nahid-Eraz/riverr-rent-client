@@ -1,7 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import batman from '../../../images/p1.png';
-import ema from '../../../images/p2.png';
-import superman from '../../../images/p3.png';
 import Testimonial from '../Testimonial/Testimonial';
 
 
