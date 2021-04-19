@@ -14,7 +14,6 @@ import Book from './components/Book/Book';
 import BookingList from './components/BookingList/BookingList';
 import Review from './components/Review/Review';
 import Login from './components/Auth/Login';
-import Navbar from './components/Navbar/Navbar';
 import { createContext, useState } from 'react';
 
 export const UserContext = createContext();
@@ -24,7 +23,6 @@ function App() {
   return (
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
       <Router>
-        <Navbar />
         <Switch>
           <Route exact path="/">
             <Home />
@@ -38,7 +36,7 @@ function App() {
           <Route path="/dashboard/makeAdmin">
             <MakeAdmin />
           </Route>
-          <Route path="/dashboard/book">
+          <Route path="/dashboard/book/:key">
             <Book />
           </Route>
           <Route path="/dashboard/bookingList">

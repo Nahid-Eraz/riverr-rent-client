@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Login.css';
 import firebase from "firebase/app";
 import "firebase/auth";
 import firebaseConfig from './firebase.config';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
+import { UserContext } from '../../App';
 
 if (firebase.apps.length === 0) {
     firebase.initializeApp(firebaseConfig);
@@ -12,12 +14,15 @@ if (firebase.apps.length === 0) {
 
 const Login = () => {
 
+    const [loggedInUser, setLoggedInUser] = useContext(UserContext)
+
     const handleGoogleSignIn = () => {
         const googleProvider = new firebase.auth.GoogleAuthProvider();
         firebase.auth().signInWithPopup(googleProvider).then((result) => {
-                const {displayName, email, photoURL} = result.user;
+                const {displayName, email} = result.user;
                 const signedInUser = {name: displayName, email: email}
                 console.log(signedInUser);
+                setLoggedInUser(signedInUser);
             }).catch((error) => {
                 const errorCode = error.code;
                 const errorMessage = error.message;
@@ -33,7 +38,7 @@ const Login = () => {
     }
     return (
         <div className="text-center" >
-            <form >
+            <form className="mt-5">
                 <h1>Login</h1>
                 <input className="input-item" type="text" placeholder="Your Name" />
                 <br />
@@ -59,6 +64,9 @@ const Login = () => {
             <div>
                 <button className="btn-main text-dark" style={{width: '39%' }} onClick={handleGoogleSignIn}><FontAwesomeIcon icon={faGoogle} /> Log in with Google</button>
             </div>
+            <br/>
+            <br/>
+            <Link className="text-warning" to="/">Back to Home</Link>
         </div>
     );
 };
