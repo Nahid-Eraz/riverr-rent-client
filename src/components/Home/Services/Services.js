@@ -1,7 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import rent from '../../../images/rent.png'
-import rent2 from '../../../images/rent2.png'
-import rent3 from '../../../images/rent3.png'
 import ServiceDetail from '../ServiceDetail/ServiceDetail';
 import '../../../App.css';
 
