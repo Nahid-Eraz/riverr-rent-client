@@ -7,6 +7,7 @@ import {
   Link
 } from "react-router-dom";
 import Home from './components/Home/Home/Home';
+import DashBoard from './components/DashBoard/DashBoard/DashBoard';
 
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
       <Switch>
         <Route exact path="/">
           <Home />
+        </Route>
+        <Route path="/dashboard">
+          <DashBoard />
         </Route>
       </Switch>
     </Router>
