@@ -6,7 +6,7 @@ const DashBoard = () => {
         <div>
             <div className="container-fluid row">
                 <Sidebar></Sidebar>
-                <div className="col-md-10 p-4 pr-5">
+                <div className="col-md-10 p-4 pe-5">
                     <h1>order list</h1>
                 </div>
             </div>

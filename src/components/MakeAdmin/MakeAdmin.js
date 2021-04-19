@@ -6,7 +6,7 @@ const MakeAdmin = () => {
         <div>
             <div className="container-fluid row">
                 <Sidebar></Sidebar>
-                <div className="col-md-10 p-4 pr-5">
+                <div className="col-md-10 p-4 pe-5">
                     <h1>make admin</h1>
                 </div>
             </div>
