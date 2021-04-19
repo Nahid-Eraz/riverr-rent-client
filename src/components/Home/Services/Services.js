@@ -7,19 +7,19 @@ import '../../../App.css';
 const servicesData = [
     {
         id: 1,
-        category: 'Daily',
-        charge: 50,
+        category: 'Sports Car',
+        charge: 700,
         img: rent
     },
     {
         id: 2,
-        category: 'Weekly',
-        charge: 280,
+        category: 'Sedan',
+        charge: 680,
         img: rent2
     },
     {
         id: 3,
-        category: 'Monthly',
+        category: 'Jeep',
         charge: 1000,
         img: rent3
     }
