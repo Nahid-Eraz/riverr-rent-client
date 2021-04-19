@@ -1,9 +1,19 @@
 import React from 'react';
 import Sidebar from '../DashBoard/Sidebar/Sidebar';
-import { useForm } from "react-hook-form";
+import BookRent from '../DashBoard/BookRent/BookRent';
+import { useState } from 'react';
+import { useEffect } from 'react';
+import { useParams } from 'react-router';
+
 const Book = () => {
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
-    const onSubmit = data => console.log(data);
+    const {key} = useParams();
+    const [bookRent, setBookRent] = useState({});
+
+    useEffect(() => {
+        fetch(`http://localhost:5005/dashboard/book/`+ key)
+        .then(res => res.json())
+        .then(data => setBookRent(data))
+    },[key])
 
     return (
         <div>
@@ -12,24 +22,7 @@ const Book = () => {
                 <div className="col-md-10 p-4 pe-5 text-center">
                     <h2 className="mt-3">Book Your Rent</h2>
                     <div className="mt-5">
-                        <form onSubmit={handleSubmit(onSubmit)}>
-                            <input {...register("name")} placeholder="Name" required />
-                            <br />
-                            <br />
-                            <input {...register("email")} placeholder="Email" required />
-                            <br />
-                            <br />
-                            <input {...register("phone")} placeholder="Phone" required />
-                            <br />
-                            <br />
-                            <input {...register("address")} placeholder="Address" required />
-                            <br />
-                            <br />
-                            <input {...register("category")} placeholder="Category" required />
-                            <br />
-                            <br />
-                            <input className="btn btn-main" type="submit" />
-                        </form>
+                        <BookRent bookRent={bookRent}></BookRent>
                     </div>
                 </div>
             </div>

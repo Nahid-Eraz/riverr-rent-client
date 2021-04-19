@@ -27,7 +27,7 @@ const Sidebar = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link to="/dashboard/book" className="text-dark">
+                    <Link to="/dashboard/book/${key}" className="text-dark">
                         <FontAwesomeIcon icon={faPenNib} /> <span>Book</span>
                     </Link>
                 </li>
