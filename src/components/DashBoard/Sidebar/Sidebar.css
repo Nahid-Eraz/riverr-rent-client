@@ -6,7 +6,7 @@
 }
 .sidebar li:hover span{
     display: inline-block;
-    transform: translate(5px);
+    transform: translate(10px);
 }
 .sidebar svg{
     margin-right: 5px;
