@@ -6,19 +6,16 @@ import ServiceDetail from '../ServiceDetail/ServiceDetail';
 import '../../../App.css';
 const servicesData = [
     {
-        id: 1,
         category: 'Sports Car',
         charge: 700,
         img: rent
     },
     {
-        id: 2,
         category: 'Sedan',
         charge: 680,
         img: rent2
     },
     {
-        id: 3,
         category: 'Jeep',
         charge: 1000,
         img: rent3
