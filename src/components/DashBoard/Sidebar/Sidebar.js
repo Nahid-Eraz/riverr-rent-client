@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Sidebar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCog, faSignOutAlt, faCalendar, faGripHorizontal, faUsers } from '@fortawesome/free-solid-svg-icons';
+import { faCog, faSignOutAlt, faFolderPlus, faGripHorizontal, faUserPlus, faCommentDots, faPenNib } from '@fortawesome/free-solid-svg-icons';
 import {  faFileAlt } from '@fortawesome/free-regular-svg-icons'
 
 const Sidebar = () => {
@@ -16,27 +16,27 @@ const Sidebar = () => {
                 </li>
                 <li>
                     <Link to="/dashboard/addservice" className="text-white">
-                        <FontAwesomeIcon icon={faCalendar} /> <span>Add Service</span> 
+                        <FontAwesomeIcon icon={faFolderPlus} /> <span>Add Service</span> 
                     </Link>
                 </li>
                 <li>
                     <Link to="/dashboard/makeadmin" className="text-white">
-                        <FontAwesomeIcon icon={faUsers} /> <span>Make Admin</span>
+                        <FontAwesomeIcon icon={faUserPlus} /> <span>Make Admin</span>
                     </Link>
                 </li>
                 <li>
                     <Link to="/dashboard/text-white" className="text-white">
-                        <FontAwesomeIcon icon={faFileAlt} /> <span>Book</span>
+                        <FontAwesomeIcon icon={faPenNib} /> <span>Book</span>
                     </Link>
                 </li>
                 <li>
                     <Link to="/dashboard/bookinglist" className="text-white" >
-                      <FontAwesomeIcon icon={faCog} /> <span>Booking List</span>
+                      <FontAwesomeIcon icon={faFileAlt} /> <span>Booking List</span>
                     </Link>
                 </li>
                 <li>
                     <Link to="/dashboard/review" className="text-white" >
-                      <FontAwesomeIcon icon={faCog} /> <span>Review</span>
+                      <FontAwesomeIcon icon={faCommentDots} /> <span>Review</span>
                     </Link>
                 </li>
             </ul>
