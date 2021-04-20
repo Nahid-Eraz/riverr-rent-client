@@ -8,7 +8,7 @@ const BookingList = () => {
                 <div className="col-md-2">
                     <Sidebar></Sidebar>
                 </div>
-                <div className="col-md-10 p-4 pe-5 ms-2">
+                <div className="col-md-10 p-4 pe-5">
                     <h1>booking list</h1>
                 </div>
             </div>

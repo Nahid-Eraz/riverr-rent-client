@@ -17,7 +17,7 @@ const DashBoard = () => {
                 <div className="col-md-2">
                     <Sidebar></Sidebar>
                 </div>
-                <div className="col-md-10 p-4 pe-5 ms-2">
+                <div className="col-md-10 p-4 pe-5">
                     <h2 className="text-center mt-3">Order List</h2>
                     <OrderListTable ordersList={ordersList}></OrderListTable>
                 </div>
