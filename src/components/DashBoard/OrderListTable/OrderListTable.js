@@ -2,7 +2,7 @@ import React from 'react';
 
 const OrderListTable = ({ ordersList }) => {
     return (
-        <table className="table table-borderless bg-main mt-5">
+        <table className="table table-borderless mt-5">
             <thead>
                 <tr>
                     <th className="text-secondary text-left" scope="col">#No</th>
