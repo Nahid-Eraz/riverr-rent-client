@@ -43,7 +43,9 @@ const Sidebar = () => {
                 </li>
             </ul>
             <div>
-                {loggedInUser.username}
+                {loggedInUser.name}
+                <br/>
+                <br/>
                 <Link to="/" className="text-dark"><FontAwesomeIcon icon={faSignOutAlt} /> <span>Back to Home</span></Link>
             </div>
         </div>

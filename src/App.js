@@ -15,6 +15,7 @@ import BookingList from './components/BookingList/BookingList';
 import Review from './components/Review/Review';
 import Login from './components/Auth/Login';
 import { createContext, useState } from 'react';
+import PrivateRoute from './components/Auth/PrivateRoute/PrivateRoute';
 
 export const UserContext = createContext();
 
@@ -27,24 +28,24 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/dashboard/orderList">
+          <PrivateRoute path="/dashboard/orderList">
             <DashBoard />
-          </Route>
-          <Route path="/dashboard/addService">
+          </PrivateRoute>
+          <PrivateRoute path="/dashboard/addService">
             <AddService />
-          </Route>
-          <Route path="/dashboard/makeAdmin">
+          </PrivateRoute>
+          <PrivateRoute path="/dashboard/makeAdmin">
             <MakeAdmin />
-          </Route>
-          <Route path="/dashboard/book/:key">
+          </PrivateRoute>
+          <PrivateRoute path="/dashboard/book/:key">
             <Book />
-          </Route>
-          <Route path="/dashboard/bookingList">
+          </PrivateRoute>
+          <PrivateRoute path="/dashboard/bookingList">
             <BookingList />
-          </Route>
-          <Route path="/dashboard/review">
+          </PrivateRoute>
+          <PrivateRoute path="/dashboard/review">
             <Review />
-          </Route>
+          </PrivateRoute>
           <Route path="/login">
             <Login />
           </Route>

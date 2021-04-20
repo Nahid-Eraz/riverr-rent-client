@@ -3,9 +3,10 @@ import { Link } from 'react-router-dom';
 import image1 from '../../../images/img 1.jpg'
 import image2 from '../../../images/img 2.jpg'
 import image3 from '../../../images/img 3.jpg'
+
 const HeaderMain = () => {
     const handleRent = () => {
-
+        alert('Select one of our service first')
     }
     return (
         <div id="carouselExampleFade" class="carousel slide carousel-fade mt-4 ms-4" data-bs-ride="carousel">
@@ -15,7 +16,7 @@ const HeaderMain = () => {
                         <div className="col-md-4 offset-md-1">
                             <h1 className="mb-4">Just Rent</h1>
                             <p className="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita praesentium eveniet nostrum corporis id quos.</p>
-                            <Link className="btn btn-main mb-4" to="/dashboard/book">Rent Now</Link>
+                            <Link onClick={handleRent} className="btn btn-main mb-4" to="">Rent Now</Link>
                         </div>
                         <div className="col-md-6 img-fluid">
                             <img src={image1} class="d-block w-100" alt="..." />
@@ -30,7 +31,7 @@ const HeaderMain = () => {
                         <div className="col-md-4 offset-md-1">
                             <h1 className="mb-4">Anytime</h1>
                             <p className="text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi aperiam et at laborum voluptatum sit!</p>
-                            <Link className="btn btn-main mb-4" to="/dashboard/book">Rent Now</Link>
+                            <Link onClick={handleRent} className="btn btn-main mb-4" to="">Rent Now</Link>
                         </div>
                     </div>
                 </div>
@@ -39,7 +40,7 @@ const HeaderMain = () => {
                         <div className="col-md-4 offset-md-1">
                             <h1 className="mb-4">Anywhere</h1>
                             <p className="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem neque rerum consequatur aliquid ut ad!</p>
-                            <Link className="btn btn-main mb-4" to="/dashboard/book">Rent Now</Link>
+                            <Link onClick={handleRent} className="btn btn-main mb-4" to="">Rent Now</Link>
                         </div>
                         <div className="col-md-6 img-fluid">
                             <img src={image2} class="d-block w-100" alt="..." />
