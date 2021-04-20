@@ -2,6 +2,8 @@ import React from 'react';
 import Sidebar from '../DashBoard/Sidebar/Sidebar';
 
 const MakeAdmin = () => {
+    const { register, handleSubmit, watch, formState: { errors } } = useForm();
+    
     return (
         <div>
             <div className="container-fluid row">

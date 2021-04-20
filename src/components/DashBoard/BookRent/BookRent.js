@@ -35,7 +35,7 @@ const BookRent = (props) => {
     };
 
     return (
-        <div className="row d-flex align-items-center">
+        <div className="row d-flex align-items-center bg-main">
             <div className="col-md-6 mt-5 pt-3">
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <input {...register("name")} placeholder="Name" required />
