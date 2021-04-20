@@ -34,7 +34,7 @@ const MakeAdmin = () => {
                 <div className="col-md-2">
                     <Sidebar></Sidebar>
                 </div>
-                <div className="col-md-10 p-4 pe-5 bg-main">
+                <div className="col-md-10 p-5 pe-5 bg-main">
                     <h2 className="mt-3 text-center">Admin Joining Panel</h2>
                     <div className="mt-5">
                         <form onSubmit={handleSubmit}>

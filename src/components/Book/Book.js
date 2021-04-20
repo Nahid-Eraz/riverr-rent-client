@@ -21,7 +21,7 @@ const Book = () => {
                 <div className="col-md-2">
                     <Sidebar></Sidebar>
                 </div>
-                <div className="col-md-10 p-4 pe-5 text-center bg-main">
+                <div className="col-md-10 p-5 pe-5 text-center bg-main">
                     <h2 className="mt-3">Book Your Rent</h2>
                     <div className="mt-5">
                         <BookRent bookRent={bookRent}></BookRent>
