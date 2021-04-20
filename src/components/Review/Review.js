@@ -20,10 +20,10 @@ const Review = () => {
         const url = `https://stark-shore-51397.herokuapp.com/dashboard/review`;
         fetch(url, {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json'},
+            headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(reviewData)
         })
-        .then(res => console.log('server',res))
+            .then(res => console.log('server', res))
     };
 
     const handleImageUpload = event => {
@@ -44,7 +44,9 @@ const Review = () => {
     return (
         <div>
             <div className="container-fluid row">
-                <Sidebar></Sidebar>
+                <div className="col-md-2">
+                    <Sidebar></Sidebar>
+                </div>
                 <div className="col-md-10 p-4 pe-5 text-center bg-main">
                     <h2 className="mt-3">Give Us Your Feedback</h2>
                     <div className="mt-5">
@@ -58,7 +60,7 @@ const Review = () => {
                             <input {...register("position")} placeholder="Position" required />
                             <br />
                             <br />
-                            <input style={{height:'100px'}} {...register("quote")} placeholder="Your Feedback" required />
+                            <input style={{ height: '100px' }} {...register("quote")} placeholder="Your Feedback" required />
                             <br />
                             <br />
                             <input className="btn btn-main align-items-center" name="img" type="file" onChange={handleImageUpload} required />

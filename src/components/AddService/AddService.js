@@ -6,7 +6,7 @@ import axios from 'axios';
 const AddService = () => {
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const [imageURL, setImageURL] = useState(null)
-    
+
     const onSubmit = data => {
         const serviceData = {
             name: data.name,
@@ -18,10 +18,10 @@ const AddService = () => {
         const url = `https://stark-shore-51397.herokuapp.com/dashboard/addService`;
         fetch(url, {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json'},
+            headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(serviceData)
         })
-        .then(res => console.log('server',res))
+            .then(res => console.log('server', res))
     };
 
     const handleImageUpload = event => {
@@ -41,7 +41,9 @@ const AddService = () => {
     return (
         <div>
             <div className="container-fluid row">
-                <Sidebar></Sidebar>
+                <div className="col-md-2">
+                    <Sidebar></Sidebar>
+                </div>
                 <div className="col-md-10 p-4 pe-5 text-center bg-main">
                     <h2 className="mt-3">Add Service</h2>
                     <div className="mt-5">

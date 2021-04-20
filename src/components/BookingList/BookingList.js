@@ -5,7 +5,9 @@ const BookingList = () => {
     return (
         <div>
             <div className="container-fluid row">
-                <Sidebar></Sidebar>
+                <div className="col-md-2">
+                    <Sidebar></Sidebar>
+                </div>
                 <div className="col-md-10 p-4 pe-5">
                     <h1>booking list</h1>
                 </div>
