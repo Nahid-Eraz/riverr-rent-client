@@ -15,7 +15,7 @@ const AddService = () => {
             imageURL: imageURL
         };
 
-        const url = `http://localhost:5005/dashboard/addService`;
+        const url = `https://stark-shore-51397.herokuapp.com/dashboard/addService`;
         fetch(url, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json'},

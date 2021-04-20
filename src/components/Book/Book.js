@@ -10,7 +10,7 @@ const Book = () => {
     const [bookRent, setBookRent] = useState({});
 
     useEffect(() => {
-        fetch(`http://localhost:5005/dashboard/book/`+ key)
+        fetch(`https://stark-shore-51397.herokuapp.com/dashboard/book/`+ key)
         .then(res => res.json())
         .then(data => setBookRent(data))
     },[key])

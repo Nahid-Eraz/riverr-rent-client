@@ -6,7 +6,7 @@ const DashBoard = () => {
     const [ordersList, setOrdersList] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5005/allBookings')
+        fetch('https://stark-shore-51397.herokuapp.com/allBookings')
             .then(res => res.json())
             .then(data => setOrdersList(data))
     },[])

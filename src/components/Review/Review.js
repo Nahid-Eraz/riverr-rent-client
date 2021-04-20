@@ -17,7 +17,7 @@ const Review = () => {
             imageURL: imageURL
         };
 
-        const url = `http://localhost:5005/dashboard/review`;
+        const url = `https://stark-shore-51397.herokuapp.com/dashboard/review`;
         fetch(url, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json'},

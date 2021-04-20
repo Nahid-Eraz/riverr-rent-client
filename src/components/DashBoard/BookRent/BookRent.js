@@ -19,7 +19,7 @@ const BookRent = (props) => {
         };
         console.log(bookRentData)
 
-        const url = `http://localhost:5005/dashboard/bookings`;
+        const url = `https://stark-shore-51397.herokuapp.com/dashboard/bookings`;
         fetch(url, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json'},
