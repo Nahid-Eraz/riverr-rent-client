@@ -37,7 +37,7 @@ const Login = () => {
         alert('In Development')
     }
     return (
-        <div className="text-center" >
+        <div className="text-center bg-main" >
             <form className="mt-5">
                 <h1>Login</h1>
                 <input className="input-item" type="text" placeholder="Your Name" />
